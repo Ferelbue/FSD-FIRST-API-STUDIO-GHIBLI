@@ -1,0 +1,128 @@
+
+body {
+    margin: 0;
+    padding: 0;
+
+    min-height: 100vh;
+    width: 96vw;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgb(251,63,206);
+    background: radial-gradient(circle, rgba(251,63,206,0.4319852941176471) 0%, rgba(177,125,225,1) 100%);
+}
+
+.colc {
+
+    display: flex;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+#all {
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  min-height: 100vh;
+  width: 95vw;
+
+}
+#title {
+  height: 0.5em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 6em;
+
+}
+#myBody {
+  height: 20em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.buyButton {
+
+    visibility: hidden;
+    height: 2em;
+    width: 6em;
+    cursor: pointer;
+    color: white;
+    background-color: red;
+    border-radius: 0.5em;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+  height: 28em;
+  width: 16em;
+
+  background-color: #a20ded;
+  border-radius: 0.5em;
+  transition: 0.4s;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  margin: 1em;
+}
+
+.card:hover {
+  transition: 0.4;
+  background-color: white;
+}
+
+.card:hover {
+  .upCard,
+  .downCard {
+    visibility: hidden;
+  }
+
+  .buyButton {
+    margin-bottom : 3em;
+    visibility: visible;
+  }
+
+  .centerCard {
+    margin-bottom: -3em;
+  }
+}
+
+.tshirt {
+  height: 12em;
+  width: 12em;
+  border-radius: 0.5em;
+}
+
+.upCard{
+  height: 3em;
+  font-weight: bold;
+  font-size: large;
+}
+
+
+
+.downCard {
+
+}
+
+.centerDownCard {
+  height: 6em;
+}
+
+.centerCard {
+  height: 40em;
+}
