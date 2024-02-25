@@ -4,17 +4,17 @@ body {
     padding: 0;
 
     min-height: 100vh;
-    width: 96vw;
+    width: 100%;
 
     display: flex;
     justify-content: center;
     align-items: center;
+
     background: rgb(251,63,206);
     background: radial-gradient(circle, rgba(251,63,206,0.4319852941176471) 0%, rgba(177,125,225,1) 100%);
 }
 
 .colc {
-
     display: flex;
     justify-content: center;
     display: flex;
@@ -23,50 +23,42 @@ body {
     align-items: center;
 }
 #all {
-
+  margin: 0;
+  padding: 0;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
   min-height: 100vh;
-  width: 95vw;
+  width: 100%;
 
 }
 #title {
-  height: 0.5em;
+  min-height: 20vh;
+  width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   font-size: 6em;
+  background-color: aqua;
+  cursor: pointer;
 
 }
 #myBody {
-  height: 20em;
+  min-height: 80vh;
+  width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-}
-.buyButton {
-
-    visibility: hidden;
-    height: 2em;
-    width: 6em;
-    cursor: pointer;
-    color: white;
-    background-color: red;
-    border-radius: 0.5em;
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  background-color: aquamarine;
 }
 
 .card {
-  height: 28em;
-  width: 16em;
+  height: 30em;
+  width: 17em;
 
   background-color: #a20ded;
   border-radius: 0.5em;
@@ -77,6 +69,7 @@ body {
   justify-content: center;
   align-items: center;
 
+ position: relative;
   margin: 1em;
 }
 
@@ -86,43 +79,62 @@ body {
 }
 
 .card:hover {
-  .upCard,
-  .downCard {
+  /* .upCard{
+    visibility: hidden;
+  } */
+  .upPrubeCard{
     visibility: hidden;
   }
 
-  .buyButton {
-    margin-bottom : 3em;
+  .upPrube2Card{
     visibility: visible;
   }
 
   .centerCard {
-    margin-bottom: -3em;
+    margin-bottom: -2em;
   }
-}
-
-.tshirt {
-  height: 12em;
-  width: 12em;
-  border-radius: 0.5em;
 }
 
 .upCard{
   height: 3em;
+  width: 14em;
+  margin-bottom: 23em;
   font-weight: bold;
   font-size: large;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
 }
-
-
-
-.downCard {
-
+.upPrube1Card{
+  height: 3em;
+  width: 14em;
+  font-weight: bold;
+  font-size: large;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
 }
-
-.centerDownCard {
-  height: 6em;
+.upPrube2Card{
+  height: 3em;
+  width: 14em;
+  font-weight: bold;
+  font-size: large;
+  visibility: hidden;
+  position:absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .centerCard {
-  height: 40em;
+  height: 25em;
+  width: 16em;
+  margin-top: 2em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
