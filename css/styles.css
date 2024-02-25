@@ -64,9 +64,9 @@ body {
   width: 17em;
 
   background-color: #a20ded;
+  box-shadow: -5px 5px 5px black;
   border-radius: 0.5em;
   transition: 0.4s;
-
   display: flex;
   flex-direction: column;
   justify-content: center;

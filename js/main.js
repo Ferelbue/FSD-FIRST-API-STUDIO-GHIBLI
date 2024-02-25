@@ -27,10 +27,6 @@ let vueltas = Math.floor(datos.length / 4)
 let imgScreen = [];
 
 
-
-
-
-
 fetch("https://ghibliapi.vercel.app/films")
   .then((response) => {
 
@@ -53,6 +49,16 @@ fetch("https://ghibliapi.vercel.app/films")
     }
     primera = 1;
     vueltas = 5;
+
+    let select = document.getElementById("movieList");
+    for (let i = 1; i < datos.length; i++) {
+
+      option = document.createElement("option");
+      option.value = datos[i].title;
+      option.text = datos[i].title;
+      select.appendChild(option);
+
+    }
   })
 
   .catch((error) => console.log(error.message));
@@ -112,6 +118,9 @@ arrayLeft.map(
       console.log(vueltas)
     })
   })
+
+
+
 
 arrayRigth.map(
   item => {
@@ -305,7 +314,20 @@ arrayCont8.map(
     })
   })
 
+document.getElementById('prueba2').addEventListener('click', function () {
+  var select = document.getElementById("movieList");
 
+  for (let i = 1; i < datos.length; i++) {
+    
+    if ((datos[i].title) === (select.value)) {
+
+      document.getElementById("prueba").innerHTML = datos[i].description
+      document.getElementById("exampleModalLabel").innerHTML = datos[i].title.toUpperCase()
+      $('#exampleModal').modal('show');
+
+    }
+  }
+});
 
 
 
