@@ -84,7 +84,7 @@ arrayLeft.map(
           const text = document.getElementById(`titulo${i}`)
           text.textContent = datos[vueltas].original_title
           const text2 = document.getElementById(`titulo${i}1`)
-          text2.textContent = datos[i].title
+          text2.textContent = datos[vueltas].title
           vueltas--;
         }
         primera--;
@@ -102,7 +102,7 @@ arrayLeft.map(
           const text = document.getElementById(`titulo${i}`)
           text.textContent = datos[vueltas].original_title
           const text2 = document.getElementById(`titulo${i}1`)
-          text2.textContent = datos[i].title
+          text2.textContent = datos[vueltas].title
           vueltas--;
         }
         primera++;
@@ -139,7 +139,7 @@ arrayRigth.map(
           const text = document.getElementById(`titulo${i}`)
           text.textContent = datos[vueltas].original_title
           const text2 = document.getElementById(`titulo${i}1`)
-          text2.textContent = datos[i].title
+          text2.textContent = datos[vueltas].title
           vueltas++;
 
         }
@@ -155,7 +155,7 @@ arrayRigth.map(
           const text = document.getElementById(`titulo${i}`)
           text.textContent = datos[vueltas].original_title
           const text2 = document.getElementById(`titulo${i}1`)
-          text2.textContent = datos[i].title
+          text2.textContent = datos[vueltas].title
           vueltas++;
         }
         // vueltas += 4;
