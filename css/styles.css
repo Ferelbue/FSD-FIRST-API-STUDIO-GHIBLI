@@ -1,27 +1,27 @@
-
 body {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 
-    min-height: 100vh;
-    width: 100%;
+  min-height: 100vh;
+  width: 100%;
 
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
-    background: rgb(251,63,206);
-    background: radial-gradient(circle, rgba(251,63,206,0.4319852941176471) 0%, rgba(177,125,225,1) 100%);
+  background: rgb(251, 63, 206);
+  background: radial-gradient(circle, rgba(251, 63, 206, 0.4319852941176471) 0%, rgba(177, 125, 225, 1) 100%);
 }
 
 .colc {
-    display: flex;
-    justify-content: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
+  display: flex;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
 }
+
 #all {
   margin: 0;
   padding: 0;
@@ -33,6 +33,7 @@ body {
   width: 100%;
 
 }
+
 #title {
   min-height: 20vh;
   width: 100%;
@@ -40,12 +41,15 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-family: Arial Black;
+  font-weight: bold;
   font-size: 6em;
-  background-color: aqua;
-  cursor: pointer;
+  color: #a20ded;
+  text-shadow: 0 1px 0 #000000, 0 2px 0 #000000, 0 3px 0 #000000, 0 4px 0 #000000, 0 5px 0 #000000, 0 6px 1px rgba(0, 0, 0, 0.1), 0 0 5px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.3), 0 3px 5px rgba(0, 0, 0, 0.2), 0 5px 10px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.2), 0 20px 20px rgba(0, 0, 0, 0.15);
+
 
 }
+
 #myBody {
   min-height: 80vh;
   width: 100%;
@@ -53,7 +57,6 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: aquamarine;
 }
 
 .card {
@@ -69,7 +72,7 @@ body {
   justify-content: center;
   align-items: center;
 
- position: relative;
+  position: relative;
   margin: 1em;
 }
 
@@ -79,14 +82,15 @@ body {
 }
 
 .card:hover {
+
   /* .upCard{
     visibility: hidden;
   } */
-  .upPrubeCard{
+  .upPrubeCard {
     visibility: hidden;
   }
 
-  .upPrube2Card{
+  .upPrube2Card {
     visibility: visible;
   }
 
@@ -95,7 +99,7 @@ body {
   }
 }
 
-.upCard{
+.upCard {
   height: 3em;
   width: 14em;
   margin-bottom: 23em;
@@ -107,7 +111,8 @@ body {
   align-items: center;
 
 }
-.upPrube1Card{
+
+.upPrube1Card {
   height: 3em;
   width: 14em;
   font-weight: bold;
@@ -117,13 +122,14 @@ body {
   align-items: center;
   position: absolute;
 }
-.upPrube2Card{
+
+.upPrube2Card {
   height: 3em;
   width: 14em;
   font-weight: bold;
   font-size: large;
   visibility: hidden;
-  position:absolute;
+  position: absolute;
   display: flex;
   justify-content: center;
   align-items: center;

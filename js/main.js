@@ -40,7 +40,7 @@ fetch("https://ghibliapi.vercel.app/films")
   .then((response) => {
     response.forEach(element => {
       datos.push(element);
-      console.log(datos)
+
     });
 
     for (let i = 1; i < 5; i++) {
@@ -173,8 +173,7 @@ arrayCont1.map(
         if ((datos[i].title) === (arrayCont1[0].childNodes[1].childNodes[3].innerHTML)) {
 
           document.getElementById("prueba").innerHTML = datos[i].description
-          document.getElementById("exampleModalLabel").innerHTML = datos[i].title
-          console.log(arrayCont1[0].childNodes[1].childNodes[3].innerHTML)
+          document.getElementById("exampleModalLabel").innerHTML = datos[i].title.toUpperCase()
           $('#exampleModal').modal('show');
 
 
@@ -193,8 +192,7 @@ arrayCont2.map(
         if ((datos[i].title) === (arrayCont2[0].childNodes[1].childNodes[3].innerHTML)) {
 
           document.getElementById("prueba").innerHTML = datos[i].description
-          document.getElementById("exampleModalLabel").innerHTML = datos[i].title
-          console.log(arrayCont1[0].childNodes[1].childNodes[3].innerHTML)
+          document.getElementById("exampleModalLabel").innerHTML = datos[i].title.toUpperCase()
           $('#exampleModal').modal('show');
 
 
@@ -212,8 +210,7 @@ arrayCont3.map(
         if ((datos[i].title) === (arrayCont3[0].childNodes[1].childNodes[3].innerHTML)) {
 
           document.getElementById("prueba").innerHTML = datos[i].description
-          document.getElementById("exampleModalLabel").innerHTML = datos[i].title
-          console.log(arrayCont1[0].childNodes[1].childNodes[3].innerHTML)
+          document.getElementById("exampleModalLabel").innerHTML = datos[i].title.toUpperCase()
           $('#exampleModal').modal('show');
 
 
@@ -230,7 +227,7 @@ arrayCont4.map(
         if ((datos[i].title) === (arrayCont4[0].childNodes[1].childNodes[3].innerHTML)) {
 
           document.getElementById("prueba").innerHTML = datos[i].description
-          document.getElementById("exampleModalLabel").innerHTML = datos[i].title
+          document.getElementById("exampleModalLabel").innerHTML = datos[i].title.toUpperCase()
           console.log(arrayCont1[0].childNodes[1].childNodes[3].innerHTML)
           $('#exampleModal').modal('show');
 
@@ -248,8 +245,7 @@ arrayCont5.map(
         if ((datos[i].title) === (arrayCont5[0].childNodes[1].childNodes[3].innerHTML)) {
 
           document.getElementById("prueba").innerHTML = datos[i].description
-          document.getElementById("exampleModalLabel").innerHTML = datos[i].title
-          console.log(arrayCont1[0].childNodes[1].childNodes[3].innerHTML)
+          document.getElementById("exampleModalLabel").innerHTML = datos[i].title.toUpperCase()
           $('#exampleModal').modal('show');
 
 
@@ -266,8 +262,7 @@ arrayCont6.map(
         if ((datos[i].title) === (arrayCont6[0].childNodes[1].childNodes[3].innerHTML)) {
 
           document.getElementById("prueba").innerHTML = datos[i].description
-          document.getElementById("exampleModalLabel").innerHTML = datos[i].title
-          console.log(arrayCont1[0].childNodes[1].childNodes[3].innerHTML)
+          document.getElementById("exampleModalLabel").innerHTML = datos[i].title.toUpperCase()
           $('#exampleModal').modal('show');
 
 
@@ -284,8 +279,7 @@ arrayCont7.map(
         if ((datos[i].title) === (arrayCont7[0].childNodes[1].childNodes[3].innerHTML)) {
 
           document.getElementById("prueba").innerHTML = datos[i].description
-          document.getElementById("exampleModalLabel").innerHTML = datos[i].title
-          console.log(arrayCont1[0].childNodes[1].childNodes[3].innerHTML)
+          document.getElementById("exampleModalLabel").innerHTML = datos[i].title.toUpperCase()
           $('#exampleModal').modal('show');
 
 
@@ -302,8 +296,7 @@ arrayCont8.map(
         if ((datos[i].title) === (arrayCont8[0].childNodes[1].childNodes[3].innerHTML)) {
 
           document.getElementById("prueba").innerHTML = datos[i].description
-          document.getElementById("exampleModalLabel").innerHTML = datos[i].title
-          console.log(arrayCont1[0].childNodes[1].childNodes[3].innerHTML)
+          document.getElementById("exampleModalLabel").innerHTML = datos[i].title.toUpperCase()
           $('#exampleModal').modal('show');
 
 
